@@ -38,3 +38,7 @@ if __name__ == "__main__":
     s = "abc"
 
     print("Output is : ", sol.countSubstrings(s))
+        
+    s2 = "aaa"
+
+    print("Output is : ", sol.countSubstrings(s2))
