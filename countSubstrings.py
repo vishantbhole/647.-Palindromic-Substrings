@@ -23,3 +23,22 @@ class Solution:
                 res += 1
                 l -= 1
                 r += 1
+                
+            l = i
+            r = i + 1
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                res += 1
+                l -= 1
+                r += 1
+
+        return res
+
+if __name__ == "__main__":
+    sol = Solution()
+    s = "abc"
+
+    print("Output is : ", sol.countSubstrings(s))
+        
+    s2 = "aaa"
+
+    print("Output is : ", sol.countSubstrings(s2))
